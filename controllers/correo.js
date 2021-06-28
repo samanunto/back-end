@@ -138,8 +138,8 @@ const token = await generarJWT(correo.name, correo.id);
         
        // secure: false, // true for 465, false for other ports
         auth: {
-          user: "sebastian.vasquez51@inacapmail.cl", // generated ethereal user
-          pass: "", // generated ethereal password
+          user: "gerencia.reilak@gmail.com", // generated ethereal user
+          pass: "Reilak2021_", // generated ethereal password
         },        tls: {
           rejectUnauthorized: false
       }
@@ -147,7 +147,7 @@ const token = await generarJWT(correo.name, correo.id);
     
       // send mail with defined transport object
       let info = await transporter.sendMail({
-        from: "sebastian.vasquez51@inacapmail.cl", // sender address,
+        from: "gerencia.reilak@gmail.com", // sender address,
         to: email,
         subject: 'Website Contact Form',
         html: contentHTML
